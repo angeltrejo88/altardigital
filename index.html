@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Altar Digital de Muertos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <img src="https://png.pngtree.com/png-clipart/20210613/original/pngtree-orange-bright-marigold-flower-png-image_6407418.jpg" alt="Flor de cempasúchil" class="flor-header">
+        <h1>ALTAR DIGITAL DE MUERTOS</h1>
+        <img src="https://png.pngtree.com/png-clipart/20210613/original/pngtree-orange-bright-marigold-flower-png-image_6407418.jpg" alt="Flor de cempasúchil" class="flor-header">
+    </header>
+    <p class="subtitulo">Honra a tus seres queridos fallecidos, enciende una vela y honra su recuerdo.</p>
+
+    <form id="form-ofrenda">
+        <h3>Coloca tu ofrenda</h3>
+        <input type="text" id="input-nombre" placeholder="Nombre de tu ser querido" required>
+        <input type="url" id="input-url" placeholder="Pega la URL de la foto" required>
+        <button type="submit">Colocar Recuerdo</button>
+    </form>
+
+    <main id="altar-container"></main>
+
+    <script src="script.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/12.5.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.5.0/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyC9gRkuSORBy-n5oG-Gvg2UCeb5dcq1DIY",
+    authDomain: "altardigitalmx-5efc1.firebaseapp.com",
+    projectId: "altardigitalmx-5efc1",
+    storageBucket: "altardigitalmx-5efc1.firebasestorage.app",
+    messagingSenderId: "902721624080",
+    appId: "1:902721624080:web:8aac9deb1e2d37632e9295",
+    measurementId: "G-1EDR6DD1G4"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
+
+<script src="script.js"></script>
+</body>
+</html>
