@@ -49,9 +49,15 @@
   // Initialize Firebase
   const app = initializeApp(firebaseConfig);
   const analytics = getAnalytics(app);
+    // 2. Inicialización
+    firebase.initializeApp(firebaseConfig);
+
+    // 3. Obtener la referencia a la base de datos (db)
+    const db = firebase.firestore();
 </script>
 
 <script src="script.js"></script>
 </body>
 
 </html>
+
