@@ -1,13 +1,14 @@
+// script.js
 document.addEventListener('DOMContentLoaded', () => {
 
     // ----------------------------------------------------
     // 1. INICIALIZACIÓN Y DIAGNÓSTICO
     // ----------------------------------------------------
-    // Verifica si la variable 'db' (de Firestore) está definida
+    // Esta es la línea 5, y si 'db' ya existe, el código continúa.
     if (typeof db === 'undefined') {
         console.error("🔴 ERROR CRÍTICO: La variable 'db' (Firestore) no está definida.");
         console.warn("   -> Asegúrate de que index.html cargue los SDKs de Firebase y la configuración antes de script.js.");
-        return; // Detiene la ejecución si Firebase no está listo
+        return; 
     }
 
     const form = document.getElementById('form-ofrenda');
@@ -138,3 +139,4 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 });
+
